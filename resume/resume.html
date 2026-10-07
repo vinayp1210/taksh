@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taksh Chavda- Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #f8fafc;
+            --sidebar-muted: #94a3b8;
+            --sidebar-accent: #38bdf8;
+            --main-bg: #ffffff;
+            --main-text: #1e293b;
+            --main-muted: #64748b;
+            --primary: #0284c7;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0b1120;
+            color: var(--main-text);
+            line-height: 1.45;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Action Bar (hidden in print) */
+        .action-bar {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .action-brand {
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-brand span {
+            color: #38bdf8;
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-print {
+            background: #0284c7;
+            color: #fff;
+        }
+
+        .btn-print:hover {
+            background: #0369a1;
+            transform: translateY(-1px);
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        /* Resume Page Container (A4) */
+        .resume-wrapper {
+            padding: 30px 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: #ffffff;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* LEFT SIDEBAR (Enhancv Madison Taylor Style) */
+        .resume-sidebar {
+            width: 35%;
+            background: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            padding: 34px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .sidebar-name {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            line-height: 1.15;
+            color: #ffffff;
+            margin-bottom: 4px;
+            border-bottom: 2px solid var(--sidebar-accent);
+            padding-bottom: 12px;
+        }
+
+        .sidebar-section-title {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sidebar-block {
+            font-size: 11px;
+            line-height: 1.45;
+        }
+
+        .sidebar-item-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .sidebar-item-sub {
+            font-size: 10.5px;
+            color: var(--sidebar-accent);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .sidebar-item-dates {
+            font-size: 10px;
+            color: var(--sidebar-muted);
+            margin-bottom: 5px;
+        }
+
+        .sidebar-bullets {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 4px;
+        }
+
+        .sidebar-bullets li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+            color: #cbd5e1;
+            font-size: 10.5px;
+        }
+
+        .sidebar-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--sidebar-accent);
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        /* Language bar / dots */
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 11px;
+        }
+
+        .lang-dots {
+            color: var(--sidebar-accent);
+            letter-spacing: 2px;
+            font-size: 11px;
+        }
+
+        /* Skill tags in sidebar */
+        .skills-compact {
+            color: #cbd5e1;
+            font-size: 10.5px;
+            line-height: 1.6;
+        }
+
+        .skills-compact span {
+            display: inline-block;
+            margin-right: 4px;
+            color: #e2e8f0;
+        }
+
+        .skills-compact span::after {
+            content: "•";
+            color: var(--sidebar-accent);
+            margin-left: 6px;
+        }
+
+        .skills-compact span:last-child::after {
+            content: "";
+        }
+
+        /* Interests in sidebar */
+        .interests-block p {
+            color: #cbd5e1;
+            font-size: 10.5px;
+            margin-bottom: 6px;
+        }
+
+        .interests-block strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 2px;
+            font-size: 11px;
+        }
+
+        /* RIGHT MAIN COLUMN */
+        .resume-main {
+            width: 65%;
+            background: var(--main-bg);
+            padding: 34px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Header in main */
+        .main-header {
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 14px;
+        }
+
+        .header-headline {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .contact-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 16px;
+            font-size: 11px;
+            color: var(--main-muted);
+        }
+
+        .contact-inline a,
+        .contact-inline span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--main-text);
+            text-decoration: none;
+        }
+
+        .contact-inline a:hover {
+            color: var(--primary);
+        }
+
+        .contact-inline i {
+            color: var(--primary);
+            font-size: 12px;
+        }
+
+        /* Main Section Title */
+        .main-section-title {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #0f172a;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Summary */
+        .summary-text {
+            font-size: 11px;
+            line-height: 1.6;
+            color: #334155;
+            text-align: justify;
+        }
+
+        /* Experience Items */
+        .experience-item {
+            margin-bottom: 14px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .exp-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .exp-dates {
+            font-size: 10.5px;
+            font-weight: 600;
+            color: var(--main-muted);
+        }
+
+        .exp-company {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .exp-location {
+            font-size: 10.5px;
+            color: var(--main-muted);
+            font-weight: 400;
+        }
+
+        .exp-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .exp-bullets li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 4px;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #334155;
+        }
+
+        .exp-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        /* Training / Courses Grid */
+        .training-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .training-card {
+            border-left: 2px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        .training-name {
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+
+        .training-issuer {
+            font-size: 10.5px;
+            color: #475569;
+        }
+
+        .training-year {
+            font-size: 10px;
+            color: var(--main-muted);
+        }
+
+        /* Resume Footer (watermark) */
+        .resume-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9.5px;
+            color: #94a3b8;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            font-size: 9.5px;
+            color: var(--sidebar-muted);
+            padding-top: 8px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+
+        /* PRINT STYLES (Clean A4 PDF Export) */
+        @media print {
+            body {
+                background: #ffffff !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .action-bar,
+            .no-print {
+                display: none !important;
+            }
+
+            .resume-wrapper {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .resume-page {
+                width: 100% !important;
+                min-height: 100vh !important;
+                box-shadow: none !important;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP CONTROL BAR -->
+    <header class="action-bar no-print">
+        <div class="action-brand">
+            <span>TC</span> Taksh Chavda &mdash; Resume
+        </div>
+        <div class="action-btns">
+            <a href="../index.html" class="btn btn-back">
+                <i class="bi bi-arrow-left"></i> Back to Portfolio
+            </a>
+            <button onclick="window.print()" class="btn btn-print">
+                <i class="bi bi-printer"></i> Print / Save as PDF
+            </button>
+        </div>
+    </header>
+
+    <!-- RESUME CANVAS -->
+    <main class="resume-wrapper">
+        <article class="resume-page" id="resumePage">
+
+            <!-- ================= LEFT SIDEBAR ================= -->
+            <aside class="resume-sidebar">
+
+                <div>
+                    <h1 class="sidebar-name" id="resName">TAKSH<br>CHAVDA</h1>
+                </div>
+
+                <!-- VOLUNTEERING & ACTIVITIES -->
+                <section>
+                    <h2 class="sidebar-section-title">VOLUNTEERING</h2>
+                    <div class="sidebar-block">
+                        <div class="sidebar-item-title">College Tech Activities</div>
+                        <div class="sidebar-item-sub">Technical Cell</div>
+                        <div class="sidebar-item-dates">2024 &ndash; Present</div>
+                        <ul class="sidebar-bullets">
+                            <li>Assisted in student coding activities and technical workshops.</li>
+                            <li>Prepared and monitored computing equipment and network labs.</li>
+                            <li>Coordinated with peers during college coding events.</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-block" style="margin-top: 10px;">
+                        <div class="sidebar-item-title">Hackathon Participant</div>
+                        <div class="sidebar-item-sub">Odoo College Hackathon</div>
+                        <div class="sidebar-item-dates">2024</div>
+                        <ul class="sidebar-bullets">
+                            <li>Collaborated in building rapid software prototypes.</li>
+                            <li>Sharpened problem-solving and teamwork capabilities.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section>
+                    <h2 class="sidebar-section-title">EDUCATION</h2>
+                    <div class="sidebar-block">
+                        <div class="sidebar-item-title" id="resDegree">Bachelor of Technology</div>
+                        <div class="sidebar-item-sub" id="resField">Computer Science Engineering</div>
+                        <div class="sidebar-item-dates" id="resEduMeta">3rd Year &bull; 2022 &ndash; 2026 &bull; Gujarat, India</div>
+                    </div>
+                </section>
+
+                <!-- LANGUAGES -->
+                <section>
+                    <h2 class="sidebar-section-title">LANGUAGES</h2>
+                    <div class="language-item">
+                        <span>English</span>
+                        <span class="lang-dots">Professional &bull;&bull;&bull;&bull;&bull;</span>
+                    </div>
+                    <div class="language-item">
+                        <span>Hindi</span>
+                        <span class="lang-dots">Native &bull;&bull;&bull;&bull;&bull;</span>
+                    </div>
+                    <div class="language-item">
+                        <span>Gujarati</span>
+                        <span class="lang-dots">Native &bull;&bull;&bull;&bull;&bull;</span>
+                    </div>
+                </section>
+
+                <!-- SKILLS -->
+                <section>
+                    <h2 class="sidebar-section-title">SKILLS</h2>
+                    <div class="skills-compact" id="resSkillsSidebar">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Core Java</span>
+                        <span>Python</span>
+                        <span>HTML5/CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap 5</span>
+                        <span>SQL/MySQL</span>
+                        <span>DBMS</span>
+                        <span>Git/GitHub</span>
+                        <span>Cisco Packet Tracer</span>
+                        <span>Linux Basics</span>
+                    </div>
+                </section>
+
+                <!-- INTERESTS -->
+                <section>
+                    <h2 class="sidebar-section-title">INTERESTS</h2>
+                    <div class="interests-block">
+                        <strong>Cyber Security & Networks</strong>
+                        <p>Keen to explore threat defense, network security architecture, and vulnerabilities.</p>
+                        <strong>Software & Systems</strong>
+                        <p>Passionate about building scalable applications and practical database tools.</p>
+                    </div>
+                </section>
+
+                <div class="sidebar-footer">
+                    <span>Generated from Portfolio</span>
+                </div>
+
+            </aside>
+
+            <!-- ================= RIGHT MAIN ================= -->
+            <section class="resume-main">
+
+                <!-- HEADER -->
+                <div class="main-header">
+                    <div class="header-headline" id="resHeadline">
+                        Computer Science Engineering Student | backend developer| Aspiring Developer
+                    </div>
+                    <div class="contact-inline">
+                        <span id="resPhone"><i class="bi bi-telephone-fill"></i> +91 9157629106</span>
+                        <a href="mailto:takshchavda18@gmail.com" id="resEmail"><i class="bi bi-envelope-fill"></i> takshchavda18@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/taksh-chavda-0890a941a1" target="_blank" id="resLinkedin"><i class="bi bi-linkedin"></i> linkedin.com/in/taksh-chavda</a>
+                        <span id="resLocation"><i class="bi bi-geo-alt-fill"></i> Gujarat, India</span>
+                    </div>
+                </div>
+
+                <!-- SUMMARY -->
+                <div>
+                    <h2 class="main-section-title">SUMMARY</h2>
+                    <p class="summary-text" id="resSummary">
+                        Passionate Computer Science Engineering student with a solid grounding in programming languages, data structures, and database management systems. Completed a comprehensive 60-hour Cyber Security Upskilling course certified by My Job Grow (Eduquirk Innovations). Demonstrated ability to learn rapidly, collaborate in academic projects like Hospital Management System and AssetFlow, and adapt to emerging technologies. Aiming to apply technical rigor and problem-solving skills in a dynamic IT and engineering environment.
+                    </p>
+                </div>
+
+                <!-- EXPERIENCE & PROJECTS -->
+                <div>
+                    <h2 class="main-section-title">EXPERIENCE</h2>
+
+                    <!-- Role 1 -->
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Full Stack web development</span>
+                            <span class="exp-dates">09/2025</span>
+                        </div>
+                        <div class="exp-company">
+                            <span>Udemy</span>
+                            <span class="exp-location">Virtual Training</span>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-title">Hospital Management System</span>
+                            <span class="exp-dates">Academic Project</span>
+                        </div>
+                        <div class="exp-company">
+                            <span>Project Developer</span>
+                            <span class="exp-location">College Lab</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Engineered an organized healthcare management application to streamline patient records, appointments, and staff workflow.</li>
+                            <li>Designed relational database schemas to ensure data integrity and reliable search functionality.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-title">AssetFlow</span>
+                            <span class="exp-dates">Academic Project</span>
+                        </div>
+                        <div class="exp-company">
+                            <span>Software Developer</span>
+                            <span class="exp-location">College Lab</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Developed an institutional asset tracking tool for managing inventory, equipment logs, and resource allocation.</li>
+                            <li>Focused on clean, intuitive data entry and systematic reporting for organizational equipment audits.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- TRAINING / COURSES -->
+                <div>
+                    <h2 class="main-section-title">TRAINING / COURSES</h2>
+                    <div class="training-grid" id="resTrainingGrid">
+
+                        <div class="training-card">
+                            <div class="training-name">full stack web development</div>
+                            <div class="training-issuer">Udemy</div>
+                            <div class="training-year">2025 &bull; Verified Credential</div>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-name">Data Structures &amp; Algorithms</div>
+                            <div class="training-issuer">Academic Program &bull; Java / C++</div>
+                            <div class="training-year">2024 &ndash; 2025</div>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-name">Database Systems &amp; SQL</div>
+                            <div class="training-issuer">Academic Curriculum &bull; MySQL</div>
+                            <div class="training-year">2024</div>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-name">Computer Networks &amp; Packet Tracer</div>
+                            <div class="training-issuer">Cisco Networking Basics &bull; Lab</div>
+                            <div class="training-year">2024</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="resume-footer">
+                    <span>Powered by takshchavda.dev</span>
+                    <span>Confidential &amp; Verified</span>
+                </div>
+
+            </section>
+
+        </article>
+    </main>
+
+    <!-- SYNC WITH LOCALSTORAGE DATA IF PRESENT -->
+    <script>
+        (function() {
+            try {
+                const saved = localStorage.getItem("portfolio_site_data");
+                if (saved) {
+                    const data = JSON.parse(saved);
+                    if (data.profile) {
+                        if (data.profile.name) {
+                            const parts = data.profile.name.trim().split(" ");
+                            if (parts.length > 1) {
+                                document.getElementById("resName").innerHTML = parts[0] + "<br>" + parts.slice(1).join(" ");
+                            } else {
+                                document.getElementById("resName").textContent = data.profile.name;
+                            }
+                        }
+                        if (data.profile.phone) document.getElementById("resPhone").innerHTML = '<i class="bi bi-telephone-fill"></i> ' + data.profile.phone;
+                        if (data.profile.email) {
+                            const em = document.getElementById("resEmail");
+                            em.href = "mailto:" + data.profile.email;
+                            em.innerHTML = '<i class="bi bi-envelope-fill"></i> ' + data.profile.email;
+                        }
+                        if (data.profile.linkedin) {
+                            const li = document.getElementById("resLinkedin");
+                            li.href = data.profile.linkedin;
+                        }
+                        if (data.profile.location) document.getElementById("resLocation").innerHTML = '<i class="bi bi-geo-alt-fill"></i> ' + data.profile.location;
+                        if (data.profile.about) document.getElementById("resSummary").textContent = data.profile.about;
+                    }
+                    if (data.skills && Array.isArray(data.skills) && data.skills.length > 0) {
+                        const skillsContainer = document.getElementById("resSkillsSidebar");
+                        if (skillsContainer) {
+                            skillsContainer.innerHTML = data.skills.map(s => '<span>' + (typeof s === 'string' ? s : s.name) + '</span>').join('');
+                        }
+                    }
+                }
+            } catch(e) {
+                console.error("Resume sync error:", e);
+            }
+        })();
+    </script>
+</body>
+</html>

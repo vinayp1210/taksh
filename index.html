@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio of Taksh Chavda, Computer Science Engineering Student.">
+
+    <title>Taksh Chavda | Computer Science Engineering Student</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand header-logo" href="#home" id="headerBrandLogo">
+            <span class="brand-logo-badge">
+                <span class="brand-letter">T</span>
+            </span>
+            <span class="brand-name">taksh<span class="brand-dot">.</span></span>
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<header id="home" class="hero-section">
+
+    <div class="hero-grid"></div>
+
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
+
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+
+            <!-- HERO CONTENT -->
+            <div class="col-lg-7 my-auto">
+
+                <div class="hero-label reveal">
+                    <span></span>
+                    COMPUTER SCIENCE ENGINEERING STUDENT
+                </div>
+
+                <h1 class="hero-title reveal">
+                    Hello, I'm
+                    <br>
+                    <span>Taksh Chavda</span>
+                </h1>
+
+                <p class="hero-description reveal">
+                    I am a Computer Engineering student focused on
+                    strengthening my technical skills, building practical
+                    projects and preparing for opportunities in the IT field.
+                </p>
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#projects" class="btn btn-primary-custom">
+                        View Projects
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <div class="d-inline-flex gap-2">
+                        <a href="resume/Taksh_Chavda_Resume.pdf"
+                           class="btn btn-outline-custom"
+                           id="heroResumeDownloadBtn"
+                           download="Taksh_Chavda_Resume.pdf">
+                            Download Resume
+                            <i class="bi bi-download"></i>
+                        </a>
+                        <button type="button"
+                                class="btn btn-outline-custom px-3"
+                                data-bs-toggle="modal"
+                                data-bs-target="#resumeModal"
+                                title="Preview Resume">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="social-links reveal">
+
+                    <a href="https://github.com/taksh1210"
+                       target="_blank"
+                       aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/Taksh-chavda-0890a941a1"
+                       target="_blank"
+                       aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:takshchavda18@gmail.com"
+                       aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+            <div class="col-lg-5 my-auto mt-5 mt-lg-0">
+
+                <div class="hero-visual reveal">
+
+                    <div class="profile-glow"></div>
+
+                    <div class="profile-card text-center">
+
+                        <div class="profile-ring mx-auto">
+
+                            <div class="profile-image">
+                                <img src="images/profile.jpg"
+                                     alt="Taksh Chavda"
+                                     onerror="this.style.display='none'; this.parentElement.classList.add('initials-profile');">
+                                <span class="profile-initials">TC</span>
+                            </div>
+
+                        </div>
+
+                        <div class="profile-info mt-3">
+                            <span class="d-block text-muted small">Currently learning</span>
+                            <strong class="d-block mt-1">Technology • Projects • DSA</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating cards -->
+
+                    <div class="floating-card card-one">
+                        <i class="bi bi-code-slash"></i>
+                        <div>
+                            <small>Focus</small>
+                            <strong>Development</strong>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="bi bi-lightning-charge"></i>
+                        <div>
+                            <small>Mindset</small>
+                            <strong>Quick Learner</strong>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-three">
+                        <i class="bi bi-diagram-3"></i>
+                        <div>
+                            <small>Interest</small>
+                            <strong>Problem Solving</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">01</span>
+            <div>
+                <p class="section-kicker">GET TO KNOW ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+        </div>
+
+
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-5 reveal">
+                <div class="about-visual">
+                    <div class="about-frame">
+                        <div class="about-avatar"></div>
+                        <div class="about-decoration"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 reveal">
+                <div class="about-content">
+                    <h3>Learning. Building. Improving.</h3>
+                    <p>
+                        I am currently pursuing my Bachelor's degree in Computer Engineering.
+                    </p>
+                    <p>
+                        I have learned programming languages and subjects such as C, C++, Core Java, Python, DBMS, SQL, and Data Structures and Algorithms. I also have basic knowledge of Web Development and Computer Networking.
+                    </p>
+                    <p>
+                        I enjoy learning new technologies and working on practical projects. I have also participated in college technical activities and hackathons, which helped me improve my problem-solving and teamwork skills.
+                    </p>
+                    <p>
+                        My strengths are that I am a quick learner, responsible, and willing to improve myself.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT CARDS -->
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6 col-lg-3 reveal">
+                <div class="info-card h-100">
+                    <div class="info-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <span>Education</span>
+                    <h4>B.Tech CSE</h4>
+                    <p>3rd Year</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 reveal">
+                <div class="info-card h-100">
+                    <div class="info-icon">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+                    <span>Projects</span>
+                    <h4>2 Projects</h4>
+                    <p>Provided projects</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 reveal">
+                <div class="info-card h-100">
+                    <div class="info-icon">
+                        <i class="bi bi-stack"></i>
+                    </div>
+                    <span>Technical Skills</span>
+                    <h4>Multiple Areas</h4>
+                    <p>Programming & Web</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 reveal">
+                <div class="info-card h-100">
+                    <div class="info-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <span>Certification</span>
+                    <h4>Cyber Security</h4>
+                    <p>Udemy</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">02</span>
+            <div>
+                <p class="section-kicker">WHAT I WORK WITH</p>
+                <h2>Technical <span>Skills</span></h2>
+            </div>
+        </div>
+
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- Programming -->
+            <div class="col-lg-6 reveal">
+                <div class="skill-panel h-100">
+
+                    <div class="skill-panel-title">
+                        <i class="bi bi-terminal"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+
+                    <div class="skill-list">
+
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">C</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-line">
+                                <span class="skill-line-fill" data-level="88" style="width: 0%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-line">
+                                <span class="skill-line-fill" data-level="82" style="width: 0%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Core Java</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-line">
+                                <span class="skill-line-fill" data-level="85" style="width: 0%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-line">
+                                <span class="skill-line-fill" data-level="80" style="width: 0%"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Web -->
+            <div class="col-lg-6 reveal">
+                <div class="skill-panel h-100">
+
+                    <div class="skill-panel-title">
+                        <i class="bi bi-globe2"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span><i class="bi bi-filetype-html"></i> HTML5</span>
+                        <span><i class="bi bi-filetype-css"></i> CSS3</span>
+                        <span><i class="bi bi-filetype-js"></i> JavaScript</span>
+                        <span><i class="bi bi-bootstrap"></i> Bootstrap 5</span>
+                        <span><i class="bi bi-filetype-php"></i> PHP</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Database -->
+            <div class="col-lg-6 reveal">
+                <div class="skill-panel h-100">
+
+                    <div class="skill-panel-title">
+                        <i class="bi bi-database"></i>
+                        <h3>Database</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span><i class="bi bi-database"></i> DBMS</span>
+                        <span><i class="bi bi-database-fill"></i> SQL</span>
+                        <span><i class="bi bi-server"></i> MySQL</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Tools -->
+            <div class="col-lg-6 reveal">
+                <div class="skill-panel h-100">
+
+                    <div class="skill-panel-title">
+                        <i class="bi bi-tools"></i>
+                        <h3>Tools & Software</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span><i class="bi bi-git"></i> Git</span>
+                        <span><i class="bi bi-github"></i> GitHub</span>
+                        <span><i class="bi bi-code-square"></i> VS Code</span>
+                        <span><i class="bi bi-diagram-3"></i> Cisco Packet Tracer</span>
+                        <span><i class="bi bi-cpu"></i> DOSBox / MASM</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Soft Skills -->
+        <div class="soft-skills reveal mt-4">
+
+            <div class="skill-panel-title mb-3">
+                <i class="bi bi-person-check"></i>
+                <h3>Soft Skills</h3>
+            </div>
+
+            <div class="soft-skill-grid">
+                <div><i class="bi bi-puzzle"></i> Problem Solving</div>
+                <div><i class="bi bi-people"></i> Teamwork</div>
+                <div><i class="bi bi-lightning"></i> Quick Learning</div>
+                <div><i class="bi bi-chat"></i> Communication</div>
+                <div><i class="bi bi-clock"></i> Time Management</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">03</span>
+            <div>
+                <p class="section-kicker">ACADEMIC JOURNEY</p>
+                <h2>My <span>Education</span></h2>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+
+                <div class="timeline-card">
+                    <span class="timeline-label">CURRENT</span>
+                    <h3>B.Tech CSE</h3>
+                    <h4>Bachelor of Technology in Computer Science Engineering</h4>
+                    <p>
+                        Currently pursuing my Bachelor's degree in Computer Engineering.
+                    </p>
+                    <div class="timeline-meta">
+                        <span><i class="bi bi-book"></i> 3rd Year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">04</span>
+            <div>
+                <p class="section-kicker">SELECTED WORK</p>
+                <h2>My <span>Projects</span></h2>
+            </div>
+        </div>
+
+        <!-- FILTER -->
+        <div class="project-filter reveal text-center mb-4">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <div class="row g-4 project-container">
+
+            <!-- Project 1 -->
+            <div class="col-lg-6 project-item reveal" data-category="web">
+                <article class="project-card h-100 d-flex flex-column">
+
+                    <div class="project-image position-relative">
+                        <div class="project-number">01</div>
+                        <i class="bi bi-hospital fs-1"></i>
+                    </div>
+
+                    <div class="project-body d-flex flex-column flex-grow-1">
+                        <span class="project-type">PROJECT</span>
+                        <h3>Hospital Management System</h3>
+                        <p>
+                            A project titled Hospital Management System. Designed for organizing clinic records and operations.
+                        </p>
+
+                        <div class="project-tags mt-auto mb-3">
+                            <span>Project</span>
+                            <span>Management System</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="project-link disabled-link" title="GitHub link not provided">
+                                GitHub <i class="bi bi-github"></i>
+                            </button>
+                            <button class="project-link disabled-link" title="Live demo not provided">
+                                Live Demo <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-6 project-item reveal" data-category="other">
+                <article class="project-card h-100 d-flex flex-column">
+
+                    <div class="project-image project-image-alt position-relative">
+                        <div class="project-number">02</div>
+                        <i class="bi bi-boxes fs-1"></i>
+                    </div>
+
+                    <div class="project-body d-flex flex-column flex-grow-1">
+                        <span class="project-type">PROJECT</span>
+                        <h3>AssetFlow</h3>
+                        <p>
+                            A project titled AssetFlow. Streamlines asset tracking and resource management workflows.
+                        </p>
+
+                        <div class="project-tags mt-auto mb-3">
+                            <span>Project</span>
+                            <span>Asset Management</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button class="project-link disabled-link" title="GitHub link not provided">
+                                GitHub <i class="bi bi-github"></i>
+                            </button>
+                            <button class="project-link disabled-link" title="Live demo not provided">
+                                Live Demo <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">05</span>
+            <div>
+                <p class="section-kicker">EXPERIENCE</p>
+                <h2>My <span>Experience</span></h2>
+            </div>
+        </div>
+
+        <div class="experience-card reveal d-flex align-items-start gap-4 p-4">
+            <div class="experience-icon flex-shrink-0">
+                <i class="bi bi-shield-lock fs-2"></i>
+            </div>
+
+            <div class="experience-content flex-grow-1">
+                <span class="experience-date">SEPT 2026</span>
+                <h3>Cyber Security Training</h3>
+                <h4 class="text-info">UDEMY</h4>
+                <p class="mt-2">
+                    Completed a Cyber Security Upskilling Course conducted by Udemy, comprising 60 hours of structured learning and hands-on practical training.
+                </p>
+
+                <div class="experience-tags mt-3">
+                    <span><i class="bi bi-shield-check me-1"></i> Cyber Security</span>
+                    <span><i class="bi bi-clock me-1"></i> 60 Hours</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">06</span>
+            <div>
+                <p class="section-kicker">CERTIFICATION & CREDENTIALS</p>
+                <h2>My <span>Certificate</span></h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9 reveal">
+
+                <div class="certificate-card p-4 p-md-5">
+
+                    <div class="certificate-badge-top d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                        <span class="badge-verified">
+                            <i class="bi bi-patch-check-fill"></i> Verified Credential
+                        </span>
+                        <span class="badge-iso">
+                            <i class="bi bi-shield-check"></i> Udemy Certified
+                        </span>
+                    </div>
+
+                    <div class="certificate-preview mb-4 text-center" id="certPreviewWrapper" style="display:none;">
+                        <img src="images\UC-9e696d5a-e206-4e59-8f04-cd4fe3e1a96e.pdf"
+                             alt="Cyber Security Course Completion Certificate - Taksh Chavda"
+                             id="certPreviewImg"
+                             class="img-fluid rounded border border-secondary shadow">
+
+                        <div class="certificate-overlay mt-2">
+                            <button class="btn btn-sm btn-outline-light"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#certificateModal">
+                                <i class="bi bi-arrows-fullscreen"></i> View Certificate Fullscreen
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="certificate-content">
+
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                            <span class="certificate-label text-uppercase fw-bold text-info">
+                                COURSE COMPLETION • 60 HOURS
+                            </span>
+                            <span class="certificate-code text-muted small">
+                                <i class="bi bi-qr-code"></i> Credential Verified
+                            </span>
+                        </div>
+
+                        <h3 class="mb-3">Full stack web development Course</h3>
+
+                        <p class="text-secondary">
+                            Successfully completed the comprehensive <strong>Full stack web development Course</strong> conducted by <strong>Udemy</strong> in September 2026, comprising 60 hours of intensive structured learning and hands-on web development training.
+                        </p>
+
+                        <!-- Clean Aligned Grid for Metadata -->
+                        <div class="row g-3 my-4 certificate-meta p-3 rounded bg-dark border border-secondary">
+                            <div class="col-6 col-md-3">
+                                <small class="text-muted d-block">Recipient</small>
+                                <strong>Taksh Chavda</strong>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <small class="text-muted d-block">Issuer</small>
+                                <strong>Udemy</strong>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <small class="text-muted d-block">Date</small>
+                                <strong>Sept 2026</strong>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <small class="text-muted d-block">Duration</small>
+                                <strong>60 Hours</strong>
+                            </div>
+                        </div>
+
+                        <div class="certificate-actions d-flex flex-wrap gap-3 mt-4">
+
+                            <button class="btn btn-primary-custom" id="certToggleBtn" onclick="toggleCertPreview()">
+                                <i class="bi bi-eye" id="certToggleIcon"></i>
+                                View Certificate
+                            </button>
+
+                            <a href="images/full-stack-web-development-certificate.pdf"
+                               download="Taksh_Chavda_Certificate.pdf"
+                               class="btn btn-outline-custom">
+                                <i class="bi bi-download me-1"></i>
+                                Download Certificate
+                            </a>
+
+                            <a href="images/full-stack-web-development-certificate.pdf"
+                               target="_blank"
+                               class="btn btn-outline-custom">
+                                <i class="bi bi-box-arrow-up-right me-1"></i>
+                                Open in New Tab
+                            </a>
+
+                        </div>
+
+                        <script>
+                        function toggleCertPreview() {
+                            const wrapper = document.getElementById('certPreviewWrapper');
+                            const btn = document.getElementById('certToggleBtn');
+                            const icon = document.getElementById('certToggleIcon');
+                            const isHidden = wrapper.style.display === 'none' || wrapper.style.display === '';
+                            if (isHidden) {
+                                wrapper.style.display = 'block';
+                                wrapper.style.animation = 'certReveal 0.4s ease-in-out';
+                                icon.className = 'bi bi-eye-slash';
+                                btn.innerHTML = '<i class="bi bi-eye-slash" id="certToggleIcon"></i> Hide Certificate';
+                            } else {
+                                wrapper.style.display = 'none';
+                                icon.className = 'bi bi-eye';
+                                btn.innerHTML = '<i class="bi bi-eye" id="certToggleIcon"></i> View Certificate';
+                            }
+                        }
+                        </script>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">07</span>
+            <div>
+                <p class="section-kicker">BEYOND THE CLASSROOM</p>
+                <h2>Achievements & <span>Activities</span></h2>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 reveal">
+                <div class="achievement-card h-100">
+                    <div class="achievement-number">01</div>
+                    <i class="bi bi-trophy fs-2 mb-3 d-inline-block"></i>
+                    <h3>Odoo College Hackathon</h3>
+                    <p>Participated in Odoo College Hackathon.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 reveal">
+                <div class="achievement-card h-100">
+                    <div class="achievement-number">02</div>
+                    <i class="bi bi-cpu fs-2 mb-3 d-inline-block"></i>
+                    <h3>College Technical Activities</h3>
+                    <p>Participated in college technical activities and workshops.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 reveal">
+                <div class="achievement-card h-100">
+                    <div class="achievement-number">03</div>
+                    <i class="bi bi-calendar-event fs-2 mb-3 d-inline-block"></i>
+                    <h3>ISAC Event Planning</h3>
+                    <p>Contributed to ISAC event planning and coordination.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-number">08</span>
+            <div>
+                <p class="section-kicker">GET IN TOUCH</p>
+                <h2>Let's <span>Connect</span></h2>
+            </div>
+        </div>
+
+        <div class="row g-5 align-items-start">
+
+            <!-- CONTACT INFO -->
+            <div class="col-lg-5 reveal">
+
+                <div class="contact-intro mb-4">
+                    <h3>Have an opportunity<br>or idea?</h3>
+                    <p>
+                        Feel free to connect with me for opportunities, projects, collaborations or professional discussions.
+                    </p>
+                </div>
+
+                <div class="contact-list d-flex flex-column gap-3">
+
+                    <a href="mailto:takshchavda18@gmail.com" class="contact-item d-flex align-items-center gap-3">
+                        <div class="contact-icon flex-shrink-0">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div>
+                            <small class="d-block text-muted">Email</small>
+                            <strong>takshchavda18@gmail.com</strong>
+                        </div>
+                    </a>
+
+                    <a href="tel:9904078973" class="contact-item d-flex align-items-center gap-3">
+                        <div class="contact-icon flex-shrink-0">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div>
+                            <small class="d-block text-muted">Phone</small>
+                            <strong>9904078973</strong>
+                        </div>
+                    </a>
+
+                    <div class="contact-item d-flex align-items-center gap-3">
+                        <div class="contact-icon flex-shrink-0">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div>
+                            <small class="d-block text-muted">Location</small>
+                            <strong>Ahmedabad, Gujarat</strong>
+                        </div>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/Taksh-chavda-0890a941a1" target="_blank" class="contact-item d-flex align-items-center gap-3">
+                        <div class="contact-icon flex-shrink-0">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <div>
+                            <small class="d-block text-muted">LinkedIn</small>
+                            <strong>Taksh Chavda</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/taksh1210" target="_blank" class="contact-item d-flex align-items-center gap-3">
+                        <div class="contact-icon flex-shrink-0">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <div>
+                            <small class="d-block text-muted">GitHub</small>
+                            <strong>taksh1210</strong>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <div class="col-lg-7 reveal">
+
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/takshchavda18@gmail.com" method="POST" novalidate>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+                    <div id="formMessage"></div>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                            <div class="invalid-feedback">Please enter a subject.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="6" placeholder="Write your message..." required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary-custom submit-btn">
+                                Send Message <i class="bi bi-send ms-1"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer py-4">
+
+    <div class="container">
+
+        <div class="footer-content d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+            <div>
+                <a href="#home" class="footer-brand fs-4 fw-bold text-decoration-none">
+                    taksh<span class="text-info">.</span>
+                </a>
+                <p class="mb-0 text-muted small">Computer Science Engineering Student</p>
+            </div>
+
+            <div class="footer-social d-flex gap-3">
+                <a href="https://github.com/taksh1210" target="_blank" aria-label="GitHub"><i class="bi bi-github fs-5"></i></a>
+                <a href="https://www.linkedin.com/in/Taksh-chavda-0890a941a1" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="mailto:takshchavda18@gmail.com" aria-label="Email"><i class="bi bi-envelope fs-5"></i></a>
+            </div>
+
+        </div>
+
+        <hr class="my-3 border-secondary">
+
+        <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap small text-muted">
+            <p class="mb-0">© <span id="currentYear"></span> Taksh Chavda. All rights reserved.</p>
+            <p class="mb-0">Designed & Developed by Taksh Chavda</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+
+<!-- ================= CERTIFICATE MODAL ================= -->
+<div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content certificate-modal bg-dark text-light border-secondary">
+
+            <div class="modal-header border-secondary">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-patch-check-fill text-info fs-5"></i>
+                    <h5 class="modal-title mb-0" id="certificateModalLabel">Udemy - Taksh Chavda</h5>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center p-3 p-md-4">
+                <div class="certificate-modal-img-wrap">
+                    <img src="images\UC-9e696d5a-e206-4e59-8f04-cd4fe3e1a96e.pdf"
+                         class="img-fluid rounded shadow border border-secondary"
+                         alt="Full Stack Web Development Course Completion Certificate - Taksh Chavda">
+                </div>
+
+                <div class="modal-cert-footer mt-4 d-flex justify-content-center flex-wrap gap-3">
+                    <a href="images\UC-9e696d5a-e206-4e59-8f04-cd4fe3e1a96e.pdf"
+                       download="Taksh_Chavda_Certificate.pdf"
+                       class="btn btn-primary-custom">
+                        <i class="bi bi-download me-1"></i> Download Certificate
+                    </a>
+                    <a href="images\UC-9e696d5a-e206-4e59-8f04-cd4fe3e1a96e.pdf"
+                       target="_blank"
+                       class="btn btn-outline-custom">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Open Full Resolution
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= RESUME PREVIEW MODAL ================= -->
+<div class="modal fade resume-modal" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border-secondary">
+
+            <div class="modal-header border-secondary d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-file-earmark-person-fill text-info fs-4"></i>
+                    <div>
+                        <h5 class="modal-title mb-0" id="resumeModalLabel">Taksh Chavda &mdash; Resume</h5>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2">
+                    <a href="resume/Taksh_Chavda_Resume.pdf" download="Taksh_Chavda_Resume.pdf" class="btn btn-sm btn-primary-custom">
+                        <i class="bi bi-download me-1"></i> Download PDF
+                    </a>
+                    <a href="resume/resume.html" target="_blank" class="btn btn-sm btn-outline-custom">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> Open Fullscreen
+                    </a>
+                    <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="modal-body p-2 p-md-3">
+                <iframe src="resume/resume.html" class="resume-preview-frame w-100" style="min-height: 500px; border: none;" title="Resume Preview"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js?v=2.3"></script>
+
+</body>
+</html>
